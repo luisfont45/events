@@ -1,0 +1,36 @@
+function anotherAddEventListener(typeOfEvent, callback) {
+
+    //Detect Event Code...
+
+var eventThatHappened = {
+    eventType: "keypress",
+    key: "p",
+    durationOfKeypress: 2
+}
+
+if (eventThatHappened.eventType === typeOfEvent) {
+    callback(eventThatHappened);
+}
+
+}
+anotherAddEventListener("keypress", function(event) {
+     console.log(event);
+ });
+
+
+ function yetAnotherFuckingEventListener(thisEvent, callback2) {
+
+ var youCantStopIt = {
+     theEvent: "keypress2",
+     key2: "y",
+     durationOfKeypress2: 1
+ }
+
+ if (youCantStopIt.theEvent === thisEvent) {
+     callback2(youCantStopIt);
+ }
+ }
+
+ yetAnotherFuckingEventListener("keypress2", function(event2) {
+     console.log(event2);
+ })
